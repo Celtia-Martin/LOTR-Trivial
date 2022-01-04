@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutperfil"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_trivial"
+    tools:context="com.example.lotr_trivial.Perfil">
+
+    <ImageButton
+        android:id="@+id/volverPerfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+
+        android:background="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/boton_resultado_volver" />
+
+    <TextView
+        android:id="@+id/tituloPerfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/customfont"
+        android:text="Perfiles"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/perfilesView"
+        android:layout_width="337dp"
+        android:layout_height="366dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/volverPerfil"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addPerfil" />
+
+    <ImageButton
+        android:id="@+id/addPerfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="5dp"
+        android:adjustViewBounds="true"
+        android:background="@null"
+        android:scaleX="0.8"
+        android:scaleY="0.8"
+        app:layout_constraintEnd_toStartOf="@+id/deletePerfil"
+        app:layout_constraintStart_toEndOf="@+id/login"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/boton_perfil_crear" />
+
+    <ImageButton
+        android:id="@+id/deletePerfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="20dp"
+        android:background="@null"
+        android:scaleX="0.8"
+        android:scaleY="0.8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/boton_perfil_borrar" />
+
+    <ImageButton
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="70dp"
+        android:background="@null"
+        android:scaleX="0.8"
+        android:scaleY="0.8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/boton_login" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

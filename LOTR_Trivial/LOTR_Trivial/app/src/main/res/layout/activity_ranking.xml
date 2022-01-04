@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_ranking"
+    tools:context="com.example.lotr_trivial.Ranking">
+
+    <ImageButton
+        android:id="@+id/volverRanking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="30dp"
+        android:background="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PuntNom6"
+        app:srcCompat="@drawable/boton_resultado_volver" />
+
+    <TextView
+        android:id="@+id/tituloRanking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/customfont"
+        android:text="Ranking"
+        android:textColor="#FFFFFF"
+        android:textSize="45sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.438"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Punt1"
+        android:layout_width="104dp"
+        android:layout_height="78dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/scroll_ranking"
+        android:fontFamily="@font/customfont"
+        android:paddingTop="25sp"
+        android:text="3000"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Orden1"
+        android:layout_width="68dp"
+        android:layout_height="78dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="5dp"
+        android:background="@drawable/scroll_ranking"
+        android:fontFamily="@font/customfont"
+        android:paddingLeft="5sp"
+        android:paddingTop="20sp"
+        android:text="1º"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/PuntNom1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/PuntNom1"
+        android:layout_width="198dp"
+        android:layout_height="78dp"
+        android:layout_marginTop="120dp"
+        android:background="@drawable/scroll_ranking"
+        android:fontFamily="@font/customfont"
+        android:paddingTop="25sp"
+        android:text="Nombre1"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/Punt1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Punt2"
+        android:layout_width="104dp"
+        android:layout_height="78dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/scroll_ranking"
+        android:fontFamily="@font/customfont"
+        android:paddingTop="25sp"
+        android:text="3000"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Punt1" />
+
+    <TextView
+        android:id="@+id/Punt3"
+        android:layout_width="104dp"
+        android:layout_height="78dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/scroll_ranking"
+        android:fontFamily="@font/customfont"
+        android:paddingTop="25sp"
+        android:text="3000"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Punt2" />
+
+    <TextView
+        android:id="@+id/Punt4"
+        android:layout_width="104dp"
+        android:layout_height="78dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/scroll_ranking"
+        android:fontFamily="@font/customfont"
+        android:paddingTop="25sp"
+        android:text="3000"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Punt3" />
+
+    <TextView
+        android:id="@+id/Punt5"
+        android:layout_width="104dp"
+        android:layout_height="78dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/scroll_ranking"
+        android:fontFamily="@font/customfont"
+        android:paddingTop="25sp"
+        android:text="3000"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Punt4" />
+
+    <TextView
+        android:id="@+id/Punt6"
+        android:layout_width="104dp"
+        android:layout_height="78dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/scroll_ranking"
+        android:fontFamily="@font/customfont"
+        android:paddingTop="25sp"
+        android:text="3000"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Punt5" />
+
+    <TextView
+        android:id="@+id/PuntNom2"
+        android:layout_width="198dp"
+        android:layout_height="78dp"
+        android:background="@drawable/scroll_ranking"
+        android:fontFamily="@font/customfont"
+        android:paddingTop="25sp"
+        android:text="Nombre2"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/Punt2"
+        app:layout_constraintTop_toBottomOf="@+id/PuntNom1" />
+
+    <TextView
+        android:id="@+id/PuntNom3"
+        android:layout_width="198dp"
+        android:layout_height="78dp"
+        android:background="@drawable/scroll_ranking"
+        android:fontFamily="@font/customfont"
+        android:paddingTop="25sp"
+        android:text="Nombre3"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/Punt3"
+        app:layout_constraintTop_toBottomOf="@+id/PuntNom2" />
+
+    <TextView
+        android:id="@+id/PuntNom4"
+        android:layout_width="198dp"
+        android:layout_height="78dp"
+        android:background="@drawable/scroll_ranking"
+        android:fontFamily="@font/customfont"
+        android:paddingTop="25sp"
+        android:text="Nombre4"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/Punt4"
+        app:layout_constraintTop_toBottomOf="@+id/PuntNom3" />
+
+    <TextView
+        android:id="@+id/PuntNom5"
+        android:layout_width="198dp"
+        android:layout_height="78dp"
+        android:background="@drawable/scroll_ranking"
+        android:fontFamily="@font/customfont"
+        android:paddingTop="25sp"
+        android:text="Nombre5"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/Punt1"
+        app:layout_constraintTop_toBottomOf="@+id/PuntNom4" />
+
+    <TextView
+        android:id="@+id/PuntNom6"
+        android:layout_width="198dp"
+        android:layout_height="78dp"
+        android:background="@drawable/scroll_ranking"
+        android:fontFamily="@font/customfont"
+        android:paddingTop="25sp"
+        android:text="Nombre6"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/Punt6"
+        app:layout_constraintTop_toBottomOf="@+id/PuntNom5" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="223dp"
+        android:layout_height="71dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="40dp"
+        app:layout_constraintBottom_toBottomOf="@+id/PuntNom1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/corona" />
+
+    <TextView
+        android:id="@+id/Orden2"
+        android:layout_width="68dp"
+        android:layout_height="78dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="5dp"
+        android:background="@drawable/scroll_ranking"
+        android:fontFamily="@font/customfont"
+        android:paddingLeft="5sp"
+        android:paddingTop="20sp"
+        android:text="2º"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/PuntNom2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Orden1" />
+
+    <TextView
+        android:id="@+id/Orden3"
+        android:layout_width="68dp"
+        android:layout_height="78dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="5dp"
+        android:background="@drawable/scroll_ranking"
+        android:fontFamily="@font/customfont"
+        android:paddingLeft="5sp"
+        android:paddingTop="20sp"
+        android:text="3º"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/PuntNom3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Orden2" />
+
+    <TextView
+        android:id="@+id/Orden4"
+        android:layout_width="68dp"
+        android:layout_height="78dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="5dp"
+        android:background="@drawable/scroll_ranking"
+        android:fontFamily="@font/customfont"
+        android:paddingLeft="5sp"
+        android:paddingTop="20sp"
+        android:text="4º"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/PuntNom4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Orden3" />
+
+    <TextView
+        android:id="@+id/Orden5"
+        android:layout_width="68dp"
+        android:layout_height="78dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="5dp"
+        android:background="@drawable/scroll_ranking"
+        android:fontFamily="@font/customfont"
+        android:paddingLeft="5sp"
+        android:paddingTop="20sp"
+        android:text="5º"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/PuntNom1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Orden4" />
+
+    <TextView
+        android:id="@+id/Orden6"
+        android:layout_width="68dp"
+        android:layout_height="78dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="5dp"
+        android:background="@drawable/scroll_ranking"
+        android:fontFamily="@font/customfont"
+        android:paddingLeft="5sp"
+        android:paddingTop="20sp"
+        android:text="6º"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/PuntNom6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Orden5" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

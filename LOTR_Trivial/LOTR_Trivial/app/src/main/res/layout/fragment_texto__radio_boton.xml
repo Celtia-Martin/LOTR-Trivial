@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.lotr_trivial.FragmentosPregunta.Texto_RadioBoton">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/pregunta_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="10dp"
+            android:fontFamily="@font/customfont"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="292dp"
+            android:layout_height="328dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.491"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pregunta_3">
+
+            <RadioButton
+                android:id="@+id/respuesta1_3"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:fontFamily="@font/customfont"
+                android:text="RadioButton"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/respuesta2_3"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:fontFamily="@font/customfont"
+                android:text="RadioButton"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/respuesta3_3"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:fontFamily="@font/customfont"
+                android:text="RadioButton"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/respuesta4_3"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:fontFamily="@font/customfont"
+                android:text="RadioButton"
+                android:textSize="20sp" />
+        </RadioGroup>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

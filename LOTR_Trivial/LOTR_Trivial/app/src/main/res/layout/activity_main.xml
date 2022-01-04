@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutTrivial"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.lotr_trivial.MainActivity">
+
+    <Chronometer
+        android:id="@+id/crono"
+        android:layout_width="122dp"
+        android:layout_height="82dp"
+        android:layout_marginBottom="25dp"
+        android:fontFamily="@font/customfont"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <FrameLayout
+        android:id="@+id/QuestionContainer"
+        android:layout_width="363dp"
+        android:layout_height="572dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:clipChildren="false"
+        app:layout_constraintBottom_toTopOf="@+id/salir"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/salir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/custombutton"
+        android:fontFamily="@font/customfont"
+        android:text="Salir"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+
+        />
+
+    <TextView
+        android:id="@+id/currentScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/customfont"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/salir"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/numero_pregunta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/customfont"
+        android:text="q1"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/salir" />
+</androidx.constraintlayout.widget.ConstraintLayout>

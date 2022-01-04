@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutconfirm"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cuadro_dialogo">
+
+    <Button
+        android:id="@+id/cancelarConfirmacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/custombutton"
+        android:fontFamily="@font/customfont"
+        android:text="No"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textConfirm" />
+
+    <Button
+        android:id="@+id/aceptarConfirmacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="60dp"
+        android:background="@drawable/custombutton"
+        android:fontFamily="@font/customfont"
+        android:text="Si"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textConfirm" />
+
+    <TextView
+        android:id="@+id/textConfirm"
+        android:layout_width="332dp"
+        android:layout_height="81dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="5dp"
+        android:fontFamily="@font/customfont"
+        android:text="¿Estás segure de que quieres borrar este perfil?"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

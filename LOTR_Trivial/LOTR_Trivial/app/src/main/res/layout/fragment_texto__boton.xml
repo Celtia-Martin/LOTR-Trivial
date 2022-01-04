@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Pregunta"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    tools:context="com.example.lotr_trivial.FragmentosPregunta.Texto_Boton">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="300dp"
+            android:layout_height="325dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="20dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/PreguntaTxtBoton">
+
+            <Button
+                android:id="@+id/respuesta1_1"
+                android:layout_width="300dp"
+                android:layout_height="79dp"
+                android:background="@drawable/custombutton"
+                android:fontFamily="@font/customfont"
+                android:text="Galadriel"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/respuesta2_1"
+                android:layout_width="300dp"
+                android:layout_height="79dp"
+                android:background="@drawable/custombutton"
+                android:fontFamily="@font/customfont"
+                android:text="Varda"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/respuesta3_1"
+                android:layout_width="300dp"
+                android:layout_height="79dp"
+                android:background="@drawable/custombutton"
+                android:fontFamily="@font/customfont"
+                android:text="Malia"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/respuesta4_1"
+                android:layout_width="300dp"
+                android:layout_height="79dp"
+                android:background="@drawable/custombutton"
+                android:fontFamily="@font/customfont"
+                android:text="Melian"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/PreguntaTxtBoton"
+            android:layout_width="371dp"
+            android:layout_height="83dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="100dp"
+            android:fontFamily="@font/customfont"
+            android:text="¿Quien era la madre de Luthien?"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
